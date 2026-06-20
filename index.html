@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <!-- <h1 class="cdn">JavaScript</h1>
+    <button class="btn">Click Me!</button>
+    <input type="text" placeholder="Type something..." class="input-field">
+    <button class="btn">Submit</button>
+    <h3 class="aman"></h3> -->
+    <!-- <form>
+          <input type="text" id="username"  >
+          <input type="password" id="password" >
+            <button type="submit">Login</button>
+    </form>
+    <h3 id="message"></h3> -->
+
+ <form onclick="changetext()">
+        <input type="text" id="username"  >
+          <input type="password" id="password" >
+            <button type="submit">Login</button>
+ </form>
+
+
+    <script>
+       
+        // let username = document.getElementById('username');
+        // let password = document.getElementById('password');
+        // let form = document.getElementsByTagName('form')[0];
+        // form.addEventListener('submit', function(event){
+        //     event.preventDefault(); // Prevent form from submittingrm
+        
+        //     if(username.value === 'admin' && password.value === 'vikram123'){
+        //         document.getElementById('message').innerText = 'Login successful!';
+        //         document.getElementById('message').style.color = 'green';
+        //     } else {
+        //         document.getElementById('message').innerText = 'Invalid username or password.';
+        //         document.getElementById('message').style.color = 'red';
+        //     }
+
+        // });
+function changetext(){
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
+    let form = document.getElementsByTagName('form')[0];
+    if(username === 'admin' && password === 'vikram123'){
+        document.getElementById('message').innerText = 'login successfully';
+        document.getElementById('message').style.color = 'green';
+    } else {
+        document.getElementById('message').innerText = 'Invalid username or password.';
+        document.getElementById('message').style.color = 'red';
+    }
+    let message = document.getElementById('message');
+};
+changetext();
+
+
+
+
+        </script>
+
+    <!-- <script>
+        let inputField = document.getElementsByClassName('input-field')[0];
+         inputField.addEventListener('input', function(){
+            aman.innerText = 'You typed: ' + inputField.value;
+            aman.style.color = 'blue';                                                     
+         });
+        let btn = document.getElementsByClassName('btn')[0];
+        let cdn = document.getElementsByClassName('cdn')[0];
+        let body = document.getElementsByTagName('body')[0];
+        let aman = document.getElementsByClassName('aman')[0];
+        
+        btn.addEventListener('click', function(){
+            alert('Button Clicked!');
+            // this.style.backgroundColor = 'red';
+            cdn.style.backgroundColor = 'red';
+            cdn.style.color = 'white';
+            body.style.backgroundColor = 'lightgray';
+            aman.innerText = 'Button was clicked!';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+           
+        });
+               
+    </script> -->
+    
+</body>
+</html>
