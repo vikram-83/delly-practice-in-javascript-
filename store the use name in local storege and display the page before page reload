@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="name">
+<button onclick="saveUser()">Save</button>
+
+<h2 id="output"></h2>
+
+<script>
+function saveUser() {
+    let name = document.getElementById("name").value;
+    localStorage.setItem("user", name);
+    showUser();
+}
+
+function showUser() {
+    let user = localStorage.getItem("user");
+    document.getElementById("output").innerHTML =
+        "Welcome " + user;
+}
+
+showUser();
+</script>
+
+</body>
+</html>
