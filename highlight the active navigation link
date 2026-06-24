@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.active{
+    color:red;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<a href="#" class="nav">Home</a>
+<a href="#" class="nav">About</a>
+<a href="#" class="nav">Contact</a>
+
+<script>
+
+const links = document.querySelectorAll(".nav");
+
+links.forEach(link=>{
+    link.addEventListener("click",function(){
+
+        links.forEach(item=>{
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+    });
+});
+
+</script>
+
+</body>
+</html>
