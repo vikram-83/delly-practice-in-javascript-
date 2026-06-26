@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="createCard()">Create Card</button>
+
+<div id="container"></div>
+
+<script>
+
+function createCard() {
+
+    const card = document.createElement("div");
+
+    card.innerHTML = `
+    <h2>Face Wash</h2>
+    <p>Best Skin Product</p>
+    <h3>$10</h3>
+    `;
+
+    card.style.border = "1px solid black";
+    card.style.padding = "20px";
+
+    document.getElementById("container").appendChild(card);
+}
+
+</script>
+
+</body>
+</html>
