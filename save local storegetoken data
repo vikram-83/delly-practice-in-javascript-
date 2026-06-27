@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LocalStorage Login Example</title>
+</head>
+<body>
+
+    <h2>Login System</h2>
+
+    <input type="text" id="username" placeholder="Enter username">
+    <br><br>
+
+    <input type="password" id="password" placeholder="Enter password">
+    <br><br>
+
+    <button onclick="login()">Login</button>
+    <button onclick="checkLogin()">Check Status</button>
+    <button onclick="logout()">Logout</button>
+
+    <h2 id="status"></h2>
+
+<script src="script.js"></script>
+
+</body>
+</html>
